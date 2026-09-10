@@ -4,7 +4,6 @@ Etapa 1 do pipeline de pré-processamento das transcrições do Challenge TOTVS:
 **dados brutos → estruturas → limpeza → triagem → DP preparada**.
 
 Disciplina: Dynamic Programming — Engenharia de Software (FIAP)
-Entrega: 13/09/2026
 
 ## Integrantes
 

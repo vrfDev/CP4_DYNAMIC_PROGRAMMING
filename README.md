@@ -11,7 +11,7 @@ Entrega: 13/09/2026
 - Vitor Ramos de Farias RM: 561958
 - Leonardo Eiji Kina RM: 562784
 - Nicholas Braga de Souza RM: 561733
-- Tomé Rossi Giani RM: 5627XX (conferir)
+- Tomé Rossi Giani RM: 562422
 
 ## Objetivo
 

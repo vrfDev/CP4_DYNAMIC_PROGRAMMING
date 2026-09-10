@@ -13,8 +13,6 @@ Entrega: 13/09/2026
 - Nicholas Braga de Souza
 - Tomé Rossi Giani
 
-> Completar RMs antes de enviar.
-
 ## Objetivo
 
 Construir a parte inicial de uma ferramenta determinística de pré-processamento
@@ -22,8 +20,6 @@ de transcrições. O programa organiza as falas, aplica limpeza básica, separa 
 termos que já batem exatamente com o catálogo de produtos daqueles que exigirão
 comparação aproximada, e prepara as matrizes de Programação Dinâmica com seus
 casos-base.
-
-As células internas da matriz **não** são calculadas nesta entrega.
 
 ## Como executar
 

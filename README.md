@@ -8,10 +8,10 @@ Entrega: 13/09/2026
 
 ## Integrantes
 
-- Vitor
-- Leonardo Eiji Kina
-- Nicholas Braga de Souza
-- Tomé Rossi Giani
+- Vitor Ramos de Farias RM: 561958
+- Leonardo Eiji Kina RM: 562784
+- Nicholas Braga de Souza RM: 561733
+- Tomé Rossi Giani RM: 5627XX (conferir)
 
 ## Objetivo
 
@@ -120,7 +120,7 @@ Termos EXATO              : 6
 Termos PENDENTE_DP        : 4
 Pendentes                 : ['totos', 'protheu', 'totvss', 'protheuss']
 Matrizes DP preparadas    : 24
-Testes minimos aprovados  : 7 de 7
+Testes minimos aprovados  : 8 de 8
 ```
 
 ## Testes mínimos de aceitação
@@ -131,9 +131,10 @@ Testes minimos aprovados  : 7 de 7
 | `comparar_exato("TOTVS", " totvs ")` | `True` | OK |
 | `comparar_exato("Totos", "totvs")` | `False` | OK |
 | `preparar_dp("totos", "totvs")` | matriz 6 × 6 | OK |
-| primeira linha/coluna do caso acima | `0, 1, 2, 3, 4, 5` | OK |
+| primeira linha do caso acima | `[0, 1, 2, 3, 4, 5]` | OK |
+| primeira coluna do caso acima | `[0, 1, 2, 3, 4, 5]` | OK |
 | `preparar_dp("protheu", "protheus")` | matriz 8 × 9 | OK |
-| `pendentes_dp` | contém os termos ruidosos | OK |
+| `pendentes_dp` | contém `totos`, `protheu`, `totvss` e `protheuss` | OK |
 
 Os testes ficam na função `executar_testes()` e rodam automaticamente ao final
 da execução do programa.

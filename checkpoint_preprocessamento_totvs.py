@@ -1,8 +1,6 @@
-# =============================================================================
 # CHECKPOINT - Pre-processador de Transcricoes TOTVS
 # Dynamic Programming - Engenharia de Software - FIAP / Challenge TOTVS
 # =============================================================================
-
 
 # -----------------------------------------------------------------------------
 # DADOS DE PARTIDA
@@ -152,6 +150,7 @@ def triar_termos(lista_de_termos, lista_catalogo):
             if comparar_exato(termo, item_catalogo):
                 status = "EXATO"
                 correspondencia = item_catalogo
+                break
 
         if status == "PENDENTE_DP":
             if esta_na_lista(termo_limpo, pendentes_dp) == False:
@@ -292,6 +291,25 @@ def executar_testes():
         'preparar_dp("protheu", "protheus") -> dimensao',
         [len(dp_protheu), len(dp_protheu[0])],
         [8, 9],
+    )
+
+    # A lista pendentes_dp precisa conter todos os termos ruidosos da triagem.
+    # O teste procura cada termo esperado e acumula em 'faltando' o que nao
+    # apareceu: se a lista final ficar vazia, nenhum pendente foi perdido.
+    resultado_triagem = triar_termos(termos_observados, catalogo)
+    pendentes_obtidos = resultado_triagem[1]
+
+    termos_ruidosos = ["totos", "protheu", "totvss", "protheuss"]
+    faltando = []
+    for termo in termos_ruidosos:
+        if esta_na_lista(termo, pendentes_obtidos) == False:
+            faltando.append(termo)
+
+    total = total + 1
+    aprovados = aprovados + verificar(
+        "pendentes_dp contem os termos ruidosos",
+        faltando,
+        [],
     )
 
     return [aprovados, total]
